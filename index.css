@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@200&family=Libre+Franklin:wght@200;400&family=Plus+Jakarta+Sans:wght@500;800&family=Poppins:wght@100;200;400;600;700;800;900&family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue';
+}
+
+
+.attribution {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+body {
+    width: 100%;
+    font-family: 'Epilogue';
+    background-color: hsl(0, 0%, 98%);
+}
+header {
+    height: 4rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 10px;
+    
+}
+
+#logo {
+    transform: scale(.8);
+}
+
+.menu-icon {
+    /* position: fixed; */
+    transform: scale(.8);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.menu-icon-active {
+    position: fixed;
+    z-index: 100;
+    right: 1rem;
+    background-color: transparent;
+}
+
+/* Menu items css */
+.everything-insideMenu {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    width: 60vw;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-top: -3rem;
+    margin-right: -2rem;
+    background-color: #fff;
+    height: 110vh;
+}
+    
+.unactive {
+        display: block;
+ }
+
+ .list-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-transform: none;
+    padding-top: 10px;
+    margin-top: 10px;
+ }
+
+ .feature-link {
+    text-decoration: none;
+    color: rgb(89, 86, 86);
+ }
+
+ #img-arrow-down {
+    margin-left: 0.4rem;
+    cursor: pointer;
+    /* transform: scale(1.5); */
+ }
+
+ #img-arrow-down:hover {
+    transform: scale(1.8);
+
+ }
+
+ .arrow-up {
+    background-image: url('./images/icon-arrow-up.svg');
+ }
+
+    
+ .feature-list {
+    display: none;
+}
+
+.feature-list-active {
+    display: block;
+}
+
+
+.feature-item {
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.img-feature-list {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.login-part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+#btn-login {
+    border: none;
+    background: none;
+    color: rgb(89, 86, 86);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn-register {
+    margin-top: 1rem;
+    border: 2px solid rgb(89, 86, 86);
+    background: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: rgb(89, 86, 86);
+    cursor: pointer;
+}
+
+
+/* Menu items css end */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 4rem;
+}
+
+.img-main {
+    width: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-image: url('./images/image-hero-desktop.png') */
+}
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+.text-part {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#main-desc {
+    color: grey;
+    font-size: 0.9rem;
+    padding: 20px;
+}
+
+#btn-learn-more {
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    font-family: 'Epilogue';
+    cursor: pointer;
+    border: none;
+    font-size: 0.7rem;
+}
+
+#btn-learn-more:focus {
+    outline: none;
+}
+#btn-learn-more:hover {
+    transform: scale(1.1);
+}
+
+.clients {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-img{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+    width: 65px;
+}
+
+.clients-img {
+    width: 150px;
+    height: 1.7rem;
+    transform: scale(0.5);
+    /* object-fit: cover; */
+}
+
+ /* login ************************* */
+ .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+ }
+.login-div {
+    display: none;
+    /* z-index: 10000; */
+    position: fixed;
+    width: 230px;
+    height: auto;
+    background-color: #312244e2;
+    box-shadow: 10px 0px 20px;
+    border-radius: 10px;
+}
+
+form {
+    margin: 0 auto;
+    color: white;
+}
+
+form h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.username-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+}
+label {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+#username {
+    margin-top: 8px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#username:focus {
+    outline: none;
+}
+
+#username::placeholder {
+    font-size: 0.7rem;
+}
+
+.password-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 25px;
+}
+
+#password {
+    margin-top: 8px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#password:focus {
+    outline: none;
+}
+
+#password::placeholder {
+    font-size: 0.7rem;
+}
+
+.login-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 4.7rem;
+    background-color: #161212;
+    color: #ebe6e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #342a2a;
+
+}
+
+.close-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0.5rem 4.7rem;
+    background-color: #161212;
+    color: #ebe6e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #342a2a;
+
+}
+
+.register {
+    display: flex;
+}
+.desc-signup {
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.sign-up {
+    text-decoration: none;
+    color: rgb(14, 162, 179);
+    font-weight: bold;
+}
+ /* end of login ************************* */
+    
+
+
+
+ /* DESKTOP DESIGN ************************* */
+
+@media screen and (min-width: 760px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+        
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        z-index: 100;
+        height: 2rem;
+        margin-top: 10px;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .logo {
+        width: 30%;
+    }
+    #logo {
+        transform: scale(.7);
+        z-index: 100;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+
+    .everything-insideMenu { 
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        /* margin-top: -rem; */
+        margin-right: -2rem;
+        background-color: #fff;
+        height: 2rem;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .unactive {
+        display: block;
+     } 
+
+     .list-menu {
+        width: 5rem;
+        display: flex;
+        flex-direction:row;
+        list-style-type: none;
+        text-transform: none;
+        padding-top: 10px;
+        margin-top: -2.55rem;
+        margin-left: 1.4rem;
+        font-size: 0.8rem;
+     }
+    
+
+    .login-part {
+     display: flex;
+        flex-direction: row;
+        padding-top: 0px;
+        margin-right: 1rem;
+        /* margin-left: 10px; */
+        align-items: center;
+    }
+
+    #btn-login {
+        margin-top: -3rem;
+        font-size: 0.8rem;
+    }
+    #btn-register{
+        padding: 8px 25px;
+        margin-top: -3rem;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+   .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
+        justify-content: space-between;
+    }
+    .box1 {
+        order: 2;
+    }
+
+    .img-part {
+        height: 100%;
+        margin-top: 3rem;
+        margin-left: 7rem;
+        margin-right: 3rem;
+    }
+    
+    .img-main {
+        object-fit: cover;
+    }
+
+
+    .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+        width: 100%;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height: 70vh;
+    }
+
+    .text-part {
+        margin: 50px;
+        margin-left: 10rem;
+        width:37%;
+    }
+
+    
+    h1 {
+        font-size: 4rem;
+        width: 30rem;
+        text-align: left;
+        margin-left: 4rem;
+    }
+    span {
+        margin-top: 4rem;
+        display: block;
+    }
+    
+    #main-desc {
+        width: 400px;
+        text-align: left;
+        margin-left: 3rem;
+        padding: 20px;
+        line-height: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    #btn-learn-more{
+        margin-left: 4.5rem;
+        margin-top: 2rem;
+    }
+
+    #btn-learn-more:active {
+        background-color: white;
+        border: 1px solid black;
+        color: black
+    }
+
+    .clients {
+        margin-top: 7rem;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        /* justify-content: center; */
+        margin-left: -2.2rem;
+    }
+    
+    .one-img{
+        display: flex;
+        flex-direction: row;
+       justify-content: space-evenly;
+        width: 65px;
+        margin-left: 20px;
+    }
+    
+    .clients-img {
+        width: 150px;
+        height: 1.9rem;
+        transform: scale(0.5);
+        /* object-fit: cover; */
+    }
+
+    .feature-list {
+        width: 10rem;
+        margin-left: -6rem;
+        margin-top: 15px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 0px 8px black;
+        padding: 2px 2px 15px 5px;
+    }
+
+    .second-list {
+        width: 7rem;
+        margin-left: 0px;
+    }
+
+    
+}

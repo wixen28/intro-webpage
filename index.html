@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.svg" id="logo">
+      </div>
+      <div class="menu">
+        <div class="img-menu">
+          <img src="./images/icon-menu.svg" class="menu-icon">
+        </div>
+        <div class="everything-insideMenu">
+        <!-- One list feature -->
+        <ul class="list-menu">
+          <li class="feature">
+            <a class='feature-link' href="#">Feature<img src='./images/icon-arrow-down.svg' id='img-arrow-down' data-id='1'></a>
+            <ul class="feature-list" id="first">
+              <li class="feature-item"><img src="./images/icon-todo.svg" class="img-feature-list">Todo List</li>
+              <li class="feature-item"><img src='./images/icon-calendar.svg' class="img-feature-list">Calendar</li>
+              <li class="feature-item"><img src='./images/icon-reminders.svg' class="img-feature-list">Reminders</li>
+              <li class="feature-item"><img src='./images/icon-planning.svg' class="img-feature-list">Planning</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- One list feature -->
+        <ul class="list-menu">
+          <li class="feature">
+            <a href="#" class='feature-link'>Company <img src='./images/icon-arrow-down.svg' id='img-arrow-down' data-id='2'></a>
+            <ul class="feature-list second-list" id="second">
+              <li class="feature-item">History</li>
+              <li class="feature-item">Our Team</li>
+              <li class="feature-item">Blog</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- One list feature -->
+        <ul class="list-menu">
+          <li class="feature">
+            <a href="#" class='feature-link'>Careers</a>
+          </li>
+        </ul>
+        <ul class="list-menu">
+          <li class="feature">
+            <a href="#" class='feature-link'>About</a>
+          </li>
+        </ul>
+        <!-- One list feature -->
+        <!-- login part -->
+        <div class="login-part">
+            <button id="btn-login" class="login">Login</button>
+            <button id="btn-register" class="login">Register</button>
+          <!-- </div> -->
+        </div>
+        </div>
+      </div>
+      
+    </nav>
+  </header>
+  <!-- main part -->
+  <main>
+    <div class="container">
+    <div class="img-part box1">
+      <img src="./images/image-hero-mobile.png" class="img-main mobile">
+      <img src="./images/image-hero-desktop.png" class="img-main desktop">
+    </div>
+    <div class="text-part box2">
+      <h1><span>Make </span>remote work</h1>
+      <p id="main-desc">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button id="btn-learn-more">Learn more</button>
+      <div class="clients">
+        <div class="one-img">
+          <img src="./images/client-databiz.svg" class="clients-img">
+        </div>
+        <div class="one-img">
+          <img src="./images/client-audiophile.svg" class="clients-img">
+        </div>
+        <div class="one-img">
+          <img src="./images/client-meet.svg" class="clients-img">
+        </div>
+        <div class="one-img">
+          <img src="./images/client-maker.svg" class="clients-img">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- login page part -->
+    <div class="parent">
+    <div class="login-div">
+      <form>
+        <h2>Login</h2>
+        <div>
+          <div class="username-input">
+            <label for="username">username</label>
+            <input type="text" id='username' required ="Your username">
+          </div>
+          <div class="password-input">
+            <label for="password">password</label>
+            <input type="password" id="password" required placeholder="Your password">
+          </div>
+        </div>
+        <button class="login-btn log">Login</button>
+        <button class="close-btn">Close</button>
+        <div class="register">
+          <p class="desc-signup">Don't have account? <a class='sign-up'href='#'>Sign up</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Viktoria</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
